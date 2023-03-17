@@ -3,31 +3,48 @@
 #### Welcome to this initial exploration of customer churn at TelcoCo!
 #### The goals of this initial exploration are as follows:
 - Discover "Driving Factors" which most likely lead customer churn
+- Discover the customer segment which is most responsible for revenue
 - Discover the customer segment which is most likely to churn out
 - Identify those customers who are within the scope of said target customer segment
-- Create a Machine Learning Model which can accurately predict customer churn
+- Create a Machine Learning Model which can accurately predict customer churn before it happens
 
 #### Initial hypotheses and questions:
-#### What % of Telco Customers have No "Perceived Commitment" to Telco combined with low "Switching Costs" should they choose to churn?
+#### What % of Telco Customers have No "Perceived Commitment" to Telco in combination with low "Switching Costs"?
 - Do customers with "Month-to-Month" contracts churn out at a statistically significant greater rate than the overall population?
 - Do customers with "Paperless Billing" enabled churn out at a statistically significant greater rate than the overall population?
 - Do customers without "Dependents" churn out at a statistically significant greater rate than the overall population?
 - Do customers without "Partners" churn out at a statistically significant greater rate than the overall population?
 - Do customers with automated "Payment Types" churn out at a statistically significant greater rate than the overall population?
+- Do customers who comprise the largest customer segment churn out at a statistically significant greater rate than the overall population?
+
 #### HYPOTHESIS: Customers in this segmnent churn at greater rates than the overall Telco customer base
 
 #### Data Dictionary (not all attributes may be visible in all instances): ADD VALUE COUNTS!
-- customer_id: each customer has unique ID
-- gender: Male/Female
-- senior_citizen: 1-YES 2-NO
-- partner: Yes/No
-- dependents: Yes/No
-- tenure: an integer indicating number of months (estimated) customer has been with Telco
-- phone_service / online_security / online_backup / device_protection / tech_support / streaming_tv / streaming_movies / paperless_billing: Yes/No
-- multiple_lines: Yes/No/No phone service
-- contract_type: Month-to-month/One year/Two year
-- internet_service_type: DSL/Fiber optic/None
-- payment_type: Bank transfer(auto)/Credit card (auto)/Electronic check/Mailed check
+customer_id:                  integer                   each customer has unique ID
+
+gender:                       string                    Male/Female           
+
+senior_citizen:               enumerated integer        1-YES 2-NO
+
+partner:                      string                    Yes/No
+
+dependents:                   string                    Yes/No
+
+tenure:                       integer                   number of months customer has been with Telco
+
+phone_service / online_security / online_backup /
+device_protection / tech_support / streaming_tv / 
+streaming_movies / paperless_billing:  
+                              string                    Yes/No
+
+multiple_lines:               string                    Yes/No/No phone service
+
+contract_type:                string                    Month-to-month/One year/Two year
+
+internet_service_type:        string                    DSL/Fiber optic/None
+
+payment_type:                 string                    Bank transfer(auto)/Credit card/ 
+                                                        (auto)/Electronic check/Mailed check
 
 #### Project Planning:
 - Plan: Questions asked reflect 
