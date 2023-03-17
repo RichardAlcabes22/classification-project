@@ -14,7 +14,6 @@
 - Do customers with "Paperless Billing" enabled churn out at a statistically significant greater rate than the overall population?
 - Do customers without "Dependents" churn out at a statistically significant greater rate than the overall population?
 - Do customers without "Partners" churn out at a statistically significant greater rate than the overall population?
-- Do customers with automated "Payment Types" churn out at a statistically significant greater rate than the overall population?
 - Do customers who comprise the largest customer segment churn out at a statistically significant greater rate than the overall population?
 
 #### HYPOTHESIS: Customers in this segmnent churn at greater rates than the overall Telco customer base
@@ -47,10 +46,10 @@ payment_type:                 string                    Bank transfer(auto)/Cred
                                                         (auto)/Electronic check/Mailed check
 
 #### Project Planning:
-- Plan: Questions asked reflect 
-- Acquire: compile custom dataset from company SQL server
-- Prepare
-- Explore
+- Plan: Questions and Hypothesis
+- Acquire: Compile custom dataset from Telco SQL server
+- Prepare: Encode required columns and split into ML subsets (Train/Validate/Test)
+- Explore: 
 - Model
 - Deliver
 

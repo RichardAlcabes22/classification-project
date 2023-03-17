@@ -9,19 +9,17 @@ from sklearn.model_selection import train_test_split
 
 def prep_telco(df):
     '''
-    Accepts a telco df and drops unneeded columns, imputes missing values, and encodes cats
+    Accepts a telco df and drops unneeded columns and encodes required features
     '''
     
-    #drop out any redundant, excessively empty, or bad columns
-    df = df.drop(columns=['payment_type_id','internet_service_type_id','contract_type_id','customer_id'])
+    #drop out unneeded or bad columns
+    df = df.drop(columns=['total_charges','customer_id'])
 
     # encode categorical values:
-    # df = pd.concat(
-    # [df, pd.get_dummies(df[['gender', 'senior_citizen','partner','dependents','tech_support','streaming_tv',
-    #                        'streaming_movies','paperless_billing','churn','contract_type',
-    #                         'internet_service_type','payment_type']],
-    #                     drop_first=True)], axis=1)
-    # return df
+    df = pd.concat(
+        [df, pd.get_dummies(df[['gender','partner','dependents','phone_service','paperless_billing','churn',]],
+                            drop_first=True)], axis=1)
+    return df
 
 def split_data(df, target):
     '''
