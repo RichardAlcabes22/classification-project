@@ -8,6 +8,8 @@
 - Identify those customers who are within the scope of said target customer segment
 - Create a Machine Learning Model which can accurately predict customer churn before it happens
 
+#### All goals contribute towards the larger goal of identifying Customers who are likely to churn, so that we can intervene before the decision to churn is made.
+
 #### Initial hypotheses and questions:
 #### What % of Telco Customers have No "Perceived Commitment" to Telco in combination with low "Switching Costs"?
 - Do customers with "Month-to-Month" contracts churn out at a statistically significant greater rate than the overall population?
