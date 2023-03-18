@@ -8,6 +8,8 @@
 - Identify those customers who are within the scope of said target customer segment
 - Create a Machine Learning Model which can accurately predict customer churn before it happens
 
+#### All goals contribute towards the larger goal of identifying Customers who are likely to churn, so that we can intervene before the decision to churn is made.
+
 #### Initial hypotheses and questions:
 #### What % of Telco Customers have No "Perceived Commitment" to Telco in combination with low "Switching Costs"?
 - Do customers with "Month-to-Month" contracts churn out at a statistically significant greater rate than the overall population?
@@ -19,30 +21,30 @@
 #### HYPOTHESIS: Customers in this segmnent churn at greater rates than the overall Telco customer base
 
 #### Data Dictionary (not all attributes may be visible in all instances): ADD VALUE COUNTS!
-customer_id:                  integer                   each customer has unique ID
+customer_id:        |          integer          |         each customer has unique ID
 
-gender:                       string                    Male/Female           
+gender:             |         string             |       Male/Female           
 
-senior_citizen:               enumerated integer        1-YES 2-NO
+senior_citizen:     |         enumerated integer    |    1-YES 2-NO
 
-partner:                      string                    Yes/No
+partner:            |          string            |        Yes/No
 
-dependents:                   string                    Yes/No
+dependents:         |          string             |       Yes/No
 
-tenure:                       integer                   number of months customer has been with Telco
+tenure:             |          integer            |      number of months customer has been with Telco
 
 phone_service / online_security / online_backup /
 device_protection / tech_support / streaming_tv / 
 streaming_movies / paperless_billing:  
-                              string                    Yes/No
+                    |         string             |     Yes/No
 
-multiple_lines:               string                    Yes/No/No phone service
+multiple_lines:     |         string             |      Yes/No/No phone service
 
-contract_type:                string                    Month-to-month/One year/Two year
+contract_type:      |         string              |      Month-to-month/One year/Two year
 
-internet_service_type:        string                    DSL/Fiber optic/None
+internet_service_type:   |     string            |      DSL/Fiber optic/None
 
-payment_type:                 string                    Bank transfer(auto)/Credit card/ 
+payment_type:       |         string              |      Bank transfer(auto)/Credit card/ 
                                                         (auto)/Electronic check/Mailed check
 
 #### Project Planning:
