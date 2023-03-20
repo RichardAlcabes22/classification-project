@@ -3,8 +3,7 @@ play.ipynb
 .DS_Store
 .ipynb_checkpoints/
 __pycache__
-telco_new.csv
-telco_new_train2013.csv
+*.csv
 *.xlsx
 *.xls
 *.xl
