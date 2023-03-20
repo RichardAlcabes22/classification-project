@@ -36,17 +36,6 @@ def split_data(df, target):
     return train, validate, test
 
 
-def cat_num_cols(df):
-    cat_cols, num_cols = [], []
-    for col in df.columns.to_list():
-        if df[col].dtype == 'O':
-            cat_cols.append(col)
-        else:
-            if df[col].nunique() < 6:
-                cat_cols.append(col)
-            else:
-                num_cols.append(col)
-    return cat_cols, num_cols
 #------------------------------------------
 
 def remind_data_prep():
@@ -62,16 +51,3 @@ def remind_data_prep():
 -TIDYDATA...CALCULATED COLUMNS...RENAME COLUMNS...DROP COLUMNS\n\
 -DATATYPES...SCALE NUMERIC DATA')
     
-
-
-
-
-def ex_cat_cols(cat_cols,train_df):
-    for col in cat_cols:
-        print(f'Univariate assessment of feature {col}:')
-        sns.countplot(data=train_df, x=col)
-        plt.show()
-        print(
-        pd.concat([train_df[col].value_counts(),
-        train_df[col].value_counts(normalize=True)],
-                axis=1))

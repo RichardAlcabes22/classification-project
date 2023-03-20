@@ -56,7 +56,7 @@ payment_type:       |         string              |      Bank transfer(auto)/Cre
 
 
 #### Instructions for those who wish to follow along:
-Needed (ALL files must be placed in THE SAME FOLDER!):
+You Will Need (ALL files must be placed in THE SAME FOLDER!):
 - 1. final_report.ipynb file from this git repo
 - 2. acquire.py file from this git repo
 - 3. prepare.py file from this git repo 
@@ -74,13 +74,13 @@ Ensure:
 - All 4 files are in the SAME FOLDER
 - acquire.py, prepare.py, and env.py each have the .py extension in the file name
 - The two Blocks of Info in the env.py file are all aligned at the left-most index of the page EXCEPT the final line of code beginning with "return".  This line should be 4 whitespaces (or 1 TAB) indented from the rest.
-- If your choose to CREATE your env.py file, ensure that each of the 3 variables (host,uname,pwd) are wrapped in single-quotes ' ' as in the example.
+- If your choose to CREATE your env.py file, ensure that each of the 3 string values (host,uname,pwd) are wrapped in single-quotes ' ' as in the example.
 
-Any further troubleshooting required, please email me at myemail@somecompany.com.
+Any further assistance required, please email me at myemail@somecompany.com.
 
 
 #### Findings, Recommendations, and Takeaways:
 
-- Telco currently has a karge segment (~22%) of its customer base that exhibits three characteristics of churn, and an unmeasured pluarality of customers who exhibit at least one characteristic. 
-- While, this customer segment is the largest in telco, it also suffers from a Churn-rate that is statistically significantly greater than the mean Churn Rate for the overall customer base
+- Telco currently has a large segment (~22%) of its customer base that exhibits three characteristics of churn, and an unmeasured pluarality of customers who exhibit at least one characteristic. 
+- While, this customer segment is the largest in Telco, it also suffers from a Churn-rate that is greater than the mean Churn Rate for the overall customer base
 - A prototype ML model has been developed to ID a significant percentage of customers who Churn.  This represents an improvement upon the current situation in which 0% of customers who churn are identified.
