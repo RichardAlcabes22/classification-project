@@ -5,7 +5,7 @@
 - Discover "Driving Factors" which most likely lead customer churn
 - Discover the customer segment which is most responsible for revenue
 - Discover the customer segment which is most likely to churn out
-- Identify those customers who are within the scope of said target customer segment
+- Identify those customers who are within the scope of each customer segment
 - Create a Machine Learning Model which can accurately predict customer churn before it happens
 
 #### All goals contribute towards the larger goal of identifying Customers who are likely to churn, so that we can intervene before the decision to churn is made.
@@ -15,7 +15,6 @@
 - Do customers with "Month-to-Month" contracts churn out at a statistically significant greater rate than the overall population?
 - Do customers with "Paperless Billing" enabled churn out at a statistically significant greater rate than the overall population?
 - Do customers without "Dependents" churn out at a statistically significant greater rate than the overall population?
-- Do customers without "Partners" churn out at a statistically significant greater rate than the overall population?
 - Do customers who comprise the largest customer segment churn out at a statistically significant greater rate than the overall population?
 
 #### HYPOTHESIS: Customers in this segmnent churn at greater rates than the overall Telco customer base
@@ -51,9 +50,9 @@ payment_type:       |         string              |      Bank transfer(auto)/Cre
 - Plan: Questions and Hypothesis
 - Acquire: Compile custom dataset from Telco SQL server
 - Prepare: Encode required columns and split into ML subsets (Train/Validate/Test)
-- Explore: 
-- Model
-- Deliver
+- Explore: Discover categories with significant percentages of customers as well as those with Churn rates which are significantly greater than the Customer average.
+- Model: Design a prototype ML model which is initially designed to identify the greatest percentage of customers who are likely to churn.  We will place initial emphasis on Accuracy and Recall for the Positive (churn) class.  Type II errors lead to churn, but Type I errors also lead to wasted resources.  We will prioritize the minimization of Type II errors.
+- Deliver: Please refer to this doc as well as the Final_Report.ipynb file for the finished version of the presentation.
 
 
 #### Instructions for those who wish to follow along:
@@ -81,3 +80,7 @@ Any further troubleshooting required, please email me at myemail@somecompany.com
 
 
 #### Findings, Recommendations, and Takeaways:
+
+- Telco currently has a karge segment (~22%) of its customer base that exhibits three characteristics of churn, and an unmeasured pluarality of customers who exhibit at least one characteristic. 
+- While, this customer segment is the largest in telco, it also suffers from a Churn-rate that is statistically significantly greater than the mean Churn Rate for the overall customer base
+- A prototype ML model has been developed to ID a significant percentage of customers who Churn.  This represents an improvement upon the current situation in which 0% of customers who churn are identified.
