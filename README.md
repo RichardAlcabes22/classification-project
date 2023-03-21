@@ -19,7 +19,7 @@
 
 #### HYPOTHESIS: Customers in this segmnent churn at greater rates than the overall Telco customer base
 
-#### Data Dictionary (not all attributes may be visible in all instances): ADD VALUE COUNTS!
+#### Data Dictionary 
 customer_id:        |          integer          |         each customer has unique ID
 
 gender:             |         string             |       Male/Female           
