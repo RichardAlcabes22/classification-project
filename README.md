@@ -58,7 +58,7 @@ payment_type:       |         string              |      Bank transfer(auto)/Cre
 - Deliver: Please refer to this doc as well as the Final_Report.ipynb file for the finished version of the presentation.
 
 
-#### Instructions for those who wish to follow along:
+#### Instructions for those who wish to reproduce this work or simply follow along:
 You Will Need (ALL files must be placed in THE SAME FOLDER!):
 - 1. final_report.ipynb file from this git repo
 - 2. acquire.py file from this git repo
