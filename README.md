@@ -87,3 +87,6 @@ Any further assistance required, please email me at myemail@somecompany.com.
 - Telco currently has a large segment (~22%) of its customer base that exhibits three characteristics of churn, and an unmeasured pluarality of customers who exhibit at least one characteristic. 
 - While, this customer segment is the largest in Telco, it also suffers from a Churn-rate that is greater than the mean Churn Rate for the overall customer base
 - A prototype ML model has been developed to ID a significant percentage of customers who Churn.  This represents an improvement upon the current situation in which 0% of customers who churn are identified.
+
+# NOTE:
+## the PREDICTIONS .csv file code can be found at the end of the project_exploration notebook.  
