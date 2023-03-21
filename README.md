@@ -8,7 +8,10 @@
 - Identify those customers who are within the scope of each customer segment
 - Create a Machine Learning Model which can accurately predict customer churn before it happens
 
-#### All goals contribute towards the larger goal of identifying Customers who are likely to churn, so that we can intervene before the decision to churn is made.
+#### PROJECT DESCRIPTION:
+- This project is designed to provide an improvement upon Telco's current customer retention efforts.  Currently, Telco is unable to accurately identify customers who are likely to churn.
+- Therefore, Telco is currently unable to provide Targeted Loyalty Offers to those customers in an effort to retain their business.
+- With some analysis and prototype ML modeling, we can ientify Customers who are likely to churn, with a success rate greater than the current rate of 0%.
 
 #### Initial hypotheses and questions:
 #### What % of Telco Customers have No "Perceived Commitment" to Telco in combination with low "Switching Costs"?
