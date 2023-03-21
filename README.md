@@ -89,4 +89,4 @@ Any further assistance required, please email me at myemail@somecompany.com.
 - A prototype ML model has been developed to ID a significant percentage of customers who Churn.  This represents an improvement upon the current situation in which 0% of customers who churn are identified.
 
 # NOTE:
-## the PREDICTIONS .csv file code can be found at the end of the project_exploration notebook.  
+## the PREDICTIONS .csv file code can be found at the end of the project_exploration notebook, rather than in the Final_Report itself.
