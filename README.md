@@ -1,5 +1,4 @@
 # classification-project
-
 #### Welcome to this initial exploration of customer churn at TelcoCo!
 #### The goals of this initial exploration are as follows:
 - Discover "Driving Factors" which most likely lead customer churn
